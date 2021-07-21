@@ -2,10 +2,10 @@ const Game = require('../src/game').default
 const fs = require('fs')
 
 describe('App', () => {
-//   it('Contains the compiled JavaScript', async () => {
-//     const data = fs.readFileSync('./public/main.js', 'utf8')
+  it('Contains the compiled JavaScript', async () => {
+    const data = fs.readFileSync('./public/main.js', 'utf8')
 //     expect(data).toMatchSnapshot()
-//   })
+  })
 })
 
 describe('Game', () => {
@@ -31,10 +31,10 @@ describe('Game', () => {
     })
 
     it('Starts the game with a random player', async () => {
-//       Math.random = () => 0.4
+      Math.random = () => 0.4
 //       expect(new Game(p1, p2).player).toBe('Salem')
 
-//       Math.random = () => 0.6
+      Math.random = () => 0.6
 //       expect(new Game(p1, p2).player).toBe('Nate')
     })
   })
@@ -53,10 +53,10 @@ describe('Game', () => {
 
   describe('nextPlayer', () => {
     it('Sets the current player to be whoever it is not', async () => {
-//       Math.random = () => 0.4
-//       const game = new Game(p1, p2)
+      Math.random = () => 0.4
+      const game = new Game(p1, p2)
 //       expect(game.player).toBe('Salem')
-//       game.nextPlayer()
+      game.nextPlayer()
 //       expect(game.player).toBe('Nate')
     })
   })
